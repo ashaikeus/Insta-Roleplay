@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="text/javascript">
+function showMe (it, box) {
+  var vis = (box.checked) ? "block" : "none";
+  document.getElementById(it).style.display = vis;
+}
+</script>
+</head>
+
+<body>
+Do you want to specify settings?<input type="checkbox" id="random" onclick='showMe("settings", this)' checked><label for="random"> Yes</label><br>
+
+<div class="form-group">
+<label for="language-select">Language</label>
+<select multiple class="form-control" id="language-select">
+<option>English</option>
+<option>Русский</option>
+</select>
+</div>
+
+<div id="settings">
+<hr>
+Adult: <input type="checkbox" id="adult" onclick='showMe("div1", this)'><label for="adult"> Yes</label><br>
+Shipping: <input type="checkbox" id="pairings" onclick='showMe("ship", this)'><label for="pairings"> Yes</label><br>
+
+<div id="length"><div class="form-group"><label for="length-select">Post length</label>
+<select multiple class="form-control" id="length-select"><option>Short</option><option>Medium</option><option>Long</option></select></div>
+
+<div id="ship"><div class="form-group"><label for="rel-select">Relationship type:</label>
+<select multiple class="form-control" id="rel-select"><option>M/M / yaoi / BL</option><option>F/M / het</option><option>F/F / yuri / GL</option></select></div>
+
+Fandoms: 
+Genres/tags: 
+
+</div>
+
+<hr>
+<form>
+<button type="button" class="btn btn-success">Find a roleplayer!</button>
+</form>
+</body>
